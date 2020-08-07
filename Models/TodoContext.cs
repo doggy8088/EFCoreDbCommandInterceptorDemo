@@ -10,9 +10,10 @@ namespace efdemo1.Models
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             // 加入自訂的 DbCommandInterceptor 實作
-            optionsBuilder.AddInterceptors(new CreateDatabaseCollationInterceptor("Chinese_Taiwan_Stroke_CI_AS"));
+            // optionsBuilder.AddInterceptors(new CreateDatabaseCollationInterceptor("Chinese_Taiwan_Stroke_CI_AS"));
 
             // 設定預設連接字串
+            // optionsBuilder.UseSqlServer("Server=(localdb)\\MSSQLLocalDB;Initial Catalog=Todo1;Integrated Security=True");
             optionsBuilder.UseSqlServer("Server=localhost;Initial Catalog=Todo1;User Id=sa;Password=Ver7CompleXPW");
         }
 
