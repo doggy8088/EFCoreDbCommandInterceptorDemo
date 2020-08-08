@@ -6,7 +6,7 @@ namespace efdemo1.Migrations
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.Sql("ALTER DATABASE CURRENT COLLATE Chinese_Taiwan_Stroke_CI_AS", true);
+            // migrationBuilder.Sql("ALTER DATABASE CURRENT COLLATE Chinese_Taiwan_Stroke_CI_AS", true);
 
             migrationBuilder.CreateTable(
                 name: "Todos",
